@@ -20,12 +20,12 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse ml-auto" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav ml-auto text-light">
             <li className="nav-item">
-              <Link to="search">Search</Link>
+              <Link className="navLink" to="search" style={{textDecoration: "none"}}>Search</Link>
             </li>
-            <li className="nav-item">
-              <Link to="/saved">Saved</Link>
+            <li className="nav-item ml-3">
+              <Link className="navLink" to="/saved" style={{textDecoration: "none"}}>Saved</Link>
             </li>
           </ul>
         </div>
