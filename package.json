@@ -1,0 +1,31 @@
+{
+  "name": "Google-Books-Search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon --exec npx babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoloparco/google-books-search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoloparco/google-books-search/issues"
+  },
+  "homepage": "https://github.com/nicoloparco/google-books-search#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0"
+  }
+}
