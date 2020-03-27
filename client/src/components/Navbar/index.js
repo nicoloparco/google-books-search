@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary d-flex">
-        <a className="navbar-brand" href="/home">
+        <a className="navbar-brand" href="/">
           Google Books Library
         </a>
         <button
@@ -22,7 +22,7 @@ function Navbar() {
         <div className="collapse navbar-collapse ml-auto" id="navbarNav">
           <ul className="navbar-nav ml-auto text-light">
             <li className="nav-item">
-              <Link className="navLink" to="search" style={{textDecoration: "none"}}>Search</Link>
+              <Link className="navLink" to="/" style={{textDecoration: "none"}}>Search</Link>
             </li>
             <li className="nav-item ml-3">
               <Link className="navLink" to="/saved" style={{textDecoration: "none"}}>Saved</Link>
