@@ -13,6 +13,7 @@ const BookSearch = () => {
         fetch(fetchUrl, { method: "GET"}).then(res => res.json()).then(
             (result) => {
                 setBooksList(result.items)
+                console.log(result.items)
             }
         )
     )
@@ -27,7 +28,7 @@ const BookSearch = () => {
                 <div className="container mt-3 bg-primary text-light rounded-lg shadow-lg">
                 <h5 className="py-3">Results</h5>
                     {booksList.map((item, key) => (
-                        <Book key={key} name={item.name} author={item.author} image={item.image} summary={item.summary} />
+                        <Book key={key} title={item.volumeInfo.title} author={item.author} image={item.image} summary={item.summary} />
                     ))}
                 </div>
             </div>
