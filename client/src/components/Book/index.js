@@ -9,9 +9,9 @@ const Book = (props) => (
             <div className="col-md-4">
                 <img className="img-fluid thumbnail bookImg border border-primary rounded-lg" src={props.image} alt={props.title}></img>
             </div>
-            <div className="col-md-6 text-right">
-                <button type="button" className="btn btn-primary rounded-lg mb-3">Save</button>
+            <div className="col-md-6 text-right mt-3">
                 <p>{props.summary}</p>
+                <button type="button" className="btn btn-primary rounded-lg mb-3">Save</button>
             </div>
         </div>
     </div>
