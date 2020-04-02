@@ -26,8 +26,8 @@ const BookSearch = () => {
                 
                 <div className="container mt-3 bg-primary text-light rounded-lg shadow-lg">
                 <h5 className="py-3">Results</h5>
-                    {booksList.map(item => (
-                        <Book name={item.name} author={item.author} image={item.image} summary={item.summary} />
+                    {booksList.map((item, key) => (
+                        <Book key={key} name={item.name} author={item.author} image={item.image} summary={item.summary} />
                     ))}
                 </div>
             </div>
